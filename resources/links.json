@@ -1,0 +1,80 @@
+{
+    "freenas": {
+        "title": "FreeNAS",
+        "href": "http://freenas",
+        "icon": "http://freenas/static/freenas_favicon.ico"
+    },
+    "couchpotato": {
+        "title": "Couchpotato",
+        "ip": 206,
+        "port": 5050,
+        "icon": "http://192.168.1.206:5050/static/images/icons/favicon.ico"
+    },
+    "radarr": {
+        "title": "Radarr",
+        "ip": 213,
+        "port": 7878,
+        "icon": "http://192.168.1.213:7878/Content/Images/favicon/favicon.ico?h=5rhS3DvgQdQTAys3GmDWXw"
+    },
+    "sonarr": {
+        "title": "Sonarr",
+        "ip": 207,
+        "port": 8989,
+        "icon": "http://192.168.1.207:8989/Content/Images/favicon.ico?h=hnQH4IZszkSOw1Uy6Oe9Aw"
+    },
+    "headphones": {
+        "title": "Headphones",
+        "ip": 208,
+        "port": 8181,
+        "icon": "http://192.168.1.208:8181/images/favicon.ico"
+    },
+    "plex": {
+        "title": "Plex",
+        "ip": 204,
+        "port": 32400,
+        "icon": "http://192.168.1.204:32400/web/favicon.ico"
+    },
+    "emby": {
+        "title": "Emby",
+        "ip": 203,
+        "port": 8096,
+        "icon": "http://192.168.1.203:8096/web/css/images/favicon.ico"
+    },
+    "resilio": {
+        "title": "Resilio",
+        "ip": 201,
+        "port": 8888,
+        "icon": "http://192.168.1.201:8888/gui/favicon.ico?v=2"
+    },
+    "serviio": {
+        "title": "Serviio",
+        "ip": 205,
+        "port": 23423,
+        "part": "console",
+        "icon": "http://192.168.1.205:23423/console/assets/images/favicon.ico"
+    },
+    "jackett": {
+        "title": "Jackett",
+        "ip": 207,
+        "port": 9117,
+        "icon": "http://192.168.1.207:9117/favicon.ico"
+    },
+    "tmovies": {
+        "title": "Transmission Movies",
+        "ip": 209,
+        "port": 9091,
+        "icon": "http://192.168.1.209:9091/transmission/web/images/favicon.ico"
+    },
+    "tseries": {
+        "title": "Transmission Series",
+        "ip": 210,
+        "port": 9091,
+        "icon": "http://192.168.1.210:9091/transmission/web/images/favicon.ico"
+    },
+    "tmusic": {
+        "title": "Transmission Music",
+        "ip": 211,
+        "port": 9091,
+        "icon": "http://192.168.1.211:9091/transmission/web/images/favicon.ico"
+    }
+}

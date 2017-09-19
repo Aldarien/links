@@ -1,0 +1,21 @@
+{
+  "name": "links",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "npm run development",
+      "development": "npm run dev:css && npm run dev:js",
+      "dev:css": "lessc resources/less/app.less public/css/app.css",
+      "dev:js": "webpack --env=development resources/js/app.js public/js/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "less": "^2.7.2",
+    "webpack": "^3.5.5"
+  }
+}
