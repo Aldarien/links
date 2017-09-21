@@ -1,6 +1,8 @@
 <?php
 namespace Links;
 
+use Goutte\Client;
+
 class Link implements \JsonSerializable
 {
     /**
@@ -66,6 +68,16 @@ class Link implements \JsonSerializable
             }
         }
         return $data;
+    }
+    public function status()
+    {
+    	$url = $this->getHref();
+    	$client = new Client();
+    	$client->request('GET', $url);
+    	if ($client->getResponse()->getStatus() == 200) {
+    		return true;
+    	}
+    	return false;
     }
     public function getHref()
     {

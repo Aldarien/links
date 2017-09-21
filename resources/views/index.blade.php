@@ -13,19 +13,24 @@
         <thead>
             <tr>
                 <th>Title</th>
-                <th>Href</th>
             </tr>
         </thead>
         <tbody>
         @foreach ($links as $key => $link)
             <tr>
                 <td>
-                    @if ($link->icon != null)
-                    <img src="{{$link->icon}}" class="icon-16" />
-                    @endif
-                    {{$link->title}}
+                	<a href="{{$link->href}}">
+	                    @if ($link->icon != null)
+	                    <img src="{{$link->icon}}" class="icon-16" />
+	                    @else
+	                    <span class="glyphicon glyphicon-ban-circle"></span>
+	                    @endif
+	                    {{$link->title}}
+	                    @if (!$link->status())
+	                    <span class="glyphicon glyphicon-ban-circle" style="color: red"></span>
+	                    @endif
+	                </a>
                 </td>
-                <td><a href="{{$link->href}}">{{$link->href}}</a></td>
                 <td class="text-right">
                     <a href="edit.php?link={{$key}}"><span class="glyphicon glyphicon-edit"></span></a>
                     <a href="delete.php?link={{$key}}"><span class="glyphicon glyphicon-remove"></span></a>
