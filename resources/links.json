@@ -76,5 +76,11 @@
         "ip": 211,
         "port": 9091,
         "icon": "http://192.168.1.211:9091/transmission/web/images/favicon.ico"
+    },
+    "tother": {
+        "title": "Transmission Other",
+        "ip": 212,
+        "port": 9091,
+        "icon": "http://192.168.1.212:9091/transmission/web/images/favicon.ico"
     }
 }

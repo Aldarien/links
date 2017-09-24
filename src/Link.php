@@ -73,9 +73,13 @@ class Link implements \JsonSerializable
     {
     	$url = $this->getHref();
     	$client = new Client();
-    	$client->request('GET', $url);
-    	if ($client->getResponse()->getStatus() == 200) {
-    		return true;
+    	try {
+	    	$client->request('GET', $url);
+	    	if ($client->getResponse()->getStatus() == 200) {
+	    		return true;
+	    	}
+    	} catch (\Exception $e) {
+    		
     	}
     	return false;
     }

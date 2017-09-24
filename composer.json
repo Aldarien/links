@@ -2,7 +2,8 @@
 	"require-dev" : {
 		"kint-php/kint" : "~2",
 		"phpunit/phpunit" : "~6",
-        "ghostff/dbug": "~1"
+        "ghostff/dbug": "~1",
+		"filp/whoops": "^2.1"
 	},
 	"require" : {
 		"nesbot/carbon" : "^1",
