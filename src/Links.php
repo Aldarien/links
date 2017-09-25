@@ -56,7 +56,7 @@ class Links implements \IteratorAggregate
         }
         $this->links[$key] = $link;
     }
-    public function remove()
+    public function remove(string $key)
     {
         if ($this->links == null) {
             $this->loadFile();
