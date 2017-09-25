@@ -1,9 +1,9 @@
 <?php
 include_once dirname(__DIR__) . '/bootstrap/autoload.php';
 
-if (isset($_POST['link'])) {
+if (isset($_GET['link'])) {
 	$links = new Links\Links();
-	$key = $_POST['link'];
+	$key = $_GET['link'];
 	if ($links->remove($key) and $links->saveFile()) {
 		header('Location: .');
 	} else {
